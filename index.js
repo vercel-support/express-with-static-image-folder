@@ -9,8 +9,8 @@ app.use(helmet())
 app.get('*', (req, res) => {
     res.set('Content-Type', 'text/html')
     res.status(200).send(`
-        <h1><marquee direction=right>Hello from Express path '/' on Now 2.0!</marquee></h1>
-        <h2>Go to <a href="/about">/about</a></h2>
+        <style>img{width:100%;max-width:500px;}</style>
+        <div class="images"><img src="/img/pexels-photo-2132048.jpg"/><img src="/img/pexels-photo-2261017.jpg"/><img src="/img/pexels-photo-2285317.jpg"/><img src="/img/pexels-photo-2303781.jpg"/><img src="/img/pexels-photo-2323775.jpg"/></div>
     `)
 })
 
